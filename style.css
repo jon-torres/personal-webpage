@@ -21,7 +21,7 @@ p {
 
 /* hero background image */
 .bgimage {
-  height: 5vh;
+  height: 6vh;
   background: url("images/hero-image3.png");
   background-size: cover;
   position: relative;
@@ -61,6 +61,11 @@ p {
   background-color: #2a9d8f;
 }
 
+#themeSwitchBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
 /* .image_about {
   width: 80%;
 } */
@@ -72,7 +77,12 @@ p {
 
 .navbarTransparent {
   background: rgba(0, 0, 0, 0.5);
-  color: green;
+  /* color: green; */
+}
+
+.nav-link {
+  color: #2a9d8f;
+  font-weight: bold;
 }
 
 .social-icons {
@@ -113,27 +123,25 @@ p {
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
 }
-/* Style the icons in dark mode */
-@media (prefers-color-scheme: dark) {
-  .dark-icon {
-    background: grey;
-    /* Add any other styling as needed */
-  }
-}
 
 /* Style the circular icons in dark mode */
-@media (prefers-color-scheme: dark) {
-  .round-icon {
-    background-color: grey;
-    border-radius: 50%; /* Make the icon circular */
-    width: 39px; /* Adjust the width and height as needed */
-    height: 35px;
-    /* Add any other styling as needed */
-  }
+
+.round-icon {
+  background-color: white; /* Temporary color change for testing */
+  border-radius: 50%;
+  width: 39px;
+  height: 35px;
 }
 
 .typing-container {
   height: 5.5rem; /* Adjust the height as needed */
   overflow: hidden;
   white-space: nowrap;
+}
+
+.btn-link {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }

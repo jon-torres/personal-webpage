@@ -3,6 +3,8 @@
 
 <head>
     <title>Jon Torres – Computational Linguist</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap CDN -->
@@ -16,8 +18,6 @@
 
 <body class="light-theme">
     <!-- navbar -->
-    <!-- https://getbootstrap.com/docs/5.2/components/navbar/ -->
-    <!-- Add class of bg-light to nav element -->
     <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Jonathan Torres</a>
@@ -45,11 +45,16 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-
+                <ul class="navbar-nav ml-auto" style="align-items: flex-start;">
+                    <li class="nav-item nav-link">
+                        <button id="themeSwitchBtn" class="btn">
+                            <i class="fas fa-sun"></i><span class="round-icon"></span>|<i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-
     <!-- main banner -->
     <!-- https://getbootstrap.com/docs/5.2/layout/containers/ -->
     <!-- https://getbootstrap.com/docs/5.2/layout/grid/ -->
@@ -67,7 +72,7 @@
 
     <!-- about section -->
     <section class="container mt-4 pt-4 section" id="about">
-
+        <h1 class="text-center">About Me</h1><br>
         <div class="typing-container">
             <h2 class="hero_title text-center" id="languageText"></h2>
         </div>
@@ -109,13 +114,15 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lorem Ipsum</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                        <img class="card-img-top" src="images/bot_nlp.jpeg" alt="Card image" style="width:100%">
+                        <div class="card-body" style="height: 250px; overflow-y: auto;">
+                            <h4 class="card-title">Discord bot Text Generator</h4>
+                            <p class="card-text">A Discord bot that can extract messages from users and generate new
+                                text from those messages or any corpus. It uses a Markov Chains algorithm and an n-gram
+                                model to generate the text.</p>
+                            <div class="text-center btn-link">
+                                <a href="https://github.com/jon-torres/Discord-bot-text-generator" target="_blank"
+                                    class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
@@ -123,76 +130,38 @@
 
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lorem Ipsum</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                        <img class="card-img-top" src="images/tic-tac-toe.png" alt="Card image" style="width:100%">
+                        <div class="card-body" style="height: 250px; overflow-y: auto;">
+                            <h4 class="card-title">Minimax Tic-tac-toe</h4>
+                            <p class="card-text">In this tic-tac-toe single-player game you face an AI capable of making
+                                decisions based on a minimax algorithm. Every difficulty level represents a depth of the
+                                algorithm's search.</p>
+                            <div class="text-center btn-link">
+                                <a href="https://jon-torres.github.io/Minimax-tic-tac-toe/ target=" _blank"
+                                    class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Product Landing Page</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lorem Ipsum</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lorem Ipsum</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
+                        <img class="card-img-top" src="images/libraree.png" alt="Card image" style="width:100%">
+                        <div class="card-body" style="height: 250px; overflow-y: auto;">
+                            <h4 class="card-title">Libraree</h4>
+                            <p class="card-text">Libraree is a small library application. It keeps track of your reading
+                                backlog and saves it locally so you can
+                                revisit this page anytime you need.</p>
+                            <div class="text-center btn-link">
+                                <a href="https://jon-torres.github.io/Libraree/" target="_blank"
+                                    class="btn btn-success">Link</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <br>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Lorem Ipsum</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <!-- skills section-->
@@ -320,24 +289,23 @@
     <!-- footer section-->
     <footer class="container-fluid footer" id="footer">
         <!-- social media icons -->
-        <div class="social-icons mt-4">
+        <footer class="container-fluid footer" id="footer">
+            <!-- social media icons -->
+            <div class="social-icons">
+                <a href="https://github.com/jon-torres" target="_blank"><i
+                        class="fab fa-github dark-icon round-icon"></i></a>
+                <a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"><i
+                        class="fab fa-linkedin-in round-icon"></i></a>
+                <a href="https://www.medium.com/@linguisticsetc" target="_blank"><i
+                        class="fab fa-medium dark-icon round-icon"></i></a>
+            </div>
+        </footer>
 
 
-            <a href="https://github.com/jon-torres" target="_blank"><i
-                    class="fab fa-github dark-icon round-icon"></i></a>
-            <a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"><i
-                    class="fab fa-linkedin-in round-icon"></i></a>
-            <a href="https://www.medium.com/@linguisticsetc" target="_blank"><i
-                    class="fab fa-medium dark-icon round-icon"></i></a>
-
-        </div>
-    </footer>
 
 
-
-
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+        <!-- load javascript after loading all html content -->
+        <script src="script/script.js"></script>
 
 </body>
 

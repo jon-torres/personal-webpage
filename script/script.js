@@ -78,6 +78,16 @@ let darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
         showActiveTheme(theme, true);
       });
     });
+
+    // Add event listener for the theme switch button
+    const themeSwitchBtn = document.getElementById("themeSwitchBtn");
+    themeSwitchBtn.addEventListener("click", () => {
+      const currentTheme = getStoredTheme();
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+      setStoredTheme(newTheme);
+      setTheme(newTheme);
+      showActiveTheme(newTheme, true);
+    });
   });
 })();
 
