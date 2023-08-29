@@ -1,6 +1,6 @@
 "use strict";
 
-let darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
+// let darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 (() => {
   const getStoredTheme = () => localStorage.getItem("theme");
@@ -92,14 +92,14 @@ let darkModeEnabled = window.matchMedia("(prefers-color-scheme: dark)").matches;
 })();
 
 // Add or remove the dark-icon class to icons
-const icons = document.querySelectorAll(".dark-icon");
-icons.forEach((icon) => {
-  if (darkModeEnabled) {
-    icon.classList.add("dark-icon");
-  } else {
-    icon.classList.remove("dark-icon");
-  }
-});
+// const icons = document.querySelectorAll(".dark-icon");
+// icons.forEach((icon) => {
+//   if (darkModeEnabled) {
+//     icon.classList.add("dark-icon");
+//   } else {
+//     icon.classList.remove("dark-icon");
+//   }
+// });
 
 const header = document.querySelector(".navbar");
 

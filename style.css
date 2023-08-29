@@ -12,11 +12,7 @@
 }
 
 .custom-top-margin {
-  margin-top: 2rem; /* Adjust the value to increase or decrease the margin as needed */
-}
-
-p {
-  /* color: #1d3557; */
+  margin-top: 2rem;
 }
 
 /* hero background image */
@@ -66,10 +62,6 @@ p {
   color: white;
 }
 
-/* .image_about {
-  width: 80%;
-} */
-
 .rounded-circle {
   max-width: 100%;
   height: auto;
@@ -77,7 +69,6 @@ p {
 
 .navbarTransparent {
   background: rgba(0, 0, 0, 0.5);
-  /* color: green; */
 }
 
 .nav-link {
@@ -124,17 +115,15 @@ p {
   text-align: center;
 }
 
-/* Style the circular icons in dark mode */
-
 .round-icon {
-  background-color: white; /* Temporary color change for testing */
+  background-color: white;
   border-radius: 50%;
   width: 39px;
   height: 35px;
 }
 
 .typing-container {
-  height: 5.5rem; /* Adjust the height as needed */
+  height: 5.5rem;
   overflow: hidden;
   white-space: nowrap;
 }
