@@ -21,8 +21,8 @@ p {
 
 /* hero background image */
 .bgimage {
-  height: 50vh;
-  background: url("images/hero-image.jpg");
+  height: 5vh;
+  background: url("images/hero-image3.png");
   background-size: cover;
   position: relative;
   padding: 0;
@@ -30,6 +30,7 @@ p {
 }
 .hero_title {
   font-size: 4.5rem;
+  color: #2a9d8f;
 }
 
 .hero_desc {

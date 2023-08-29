@@ -35,11 +35,12 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -57,10 +58,8 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
                 <div class="hero_content">
                     <!-- <h2 class="hero_title" h2id="languageText"></h2> -->
-                    <div class="typing-container">
-                        <h2 class="hero_title" id="languageText"></h2>
-                    </div>
-                    <p class="hero_desc">Computational Linguist and Data Scientist</p>
+
+                    <!-- <p class="hero_desc">Computational Linguist and Data Scientist</p> -->
                 </div>
             </div>
         </div>
@@ -68,7 +67,10 @@
 
     <!-- about section -->
     <section class="container mt-4 pt-4 section" id="about">
-        <h1 class="text-center">About Me</h1>
+
+        <div class="typing-container">
+            <h2 class="hero_title text-center" id="languageText"></h2>
+        </div>
 
         <div class="row mt-4">
             <div class="col-lg-4">
@@ -96,99 +98,6 @@
                 <p>Currently based in Sao Paulo, Brazil, I am open to exciting opportunities that align with my
                     skills
                     and passion, even if it means relocating.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- skills section-->
-    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
-    <section class="container section" id="skills">
-        <h1 class="text-center">Soft and Hard Skills</h1>
-        <div class="row">
-            <!-- soft skills -->
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
-                        <i class='far fa-comments skillsIcon'></i>
-                        <h4 class="card-title mt-3">Communication</h4>
-                        <p class="card-text mt-3">My background in linguistics has honed my ability to convey complex
-                            ideas with clarity and precision. Whether it's presenting research findings, collaborating
-                            with interdisciplinary teams, or translating technical concepts for broader audiences, I
-                            pride myself on my capacity to bridge communication gaps and foster understanding</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
-
-                        <i class="fa skillsIcon fa-book"></i>
-
-                        <h4 class="card-title mt-3">Self-Learning</h4>
-                        <p class="card-text mt-3">In the realm of formal linguistics, I've
-                            pursued a multidisciplinary
-                            path, integrating linguistics, mathematics, logic, and computer science. Self-driven
-                            learning is the cornerstone of my journey, allowing me to refine theories and provide
-                            precise analyses. This dedication equips me to adapt swiftly to evolving trends and deliver
-                            innovative solutions</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px;  overflow-y: auto;">
-                        <i class="fa skillsIcon fa-users"></i>
-                        <h4 class="card-title mt-3">Team and Individual Work</h4>
-                        <p class="card-text mt-3">Collaboration is at the core of my professional journey. From
-                            teaching
-                            linguistics to first-year students to evaluating social media content for machine
-                            learning,
-                            I've honed my ability to excel both as a team player and an individual contributor.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- hard skills -->
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px;  overflow-y: auto;">
-                        <i class='fa fa-file-text skillsIcon'></i>
-                        <h4 class="card-title mt-3">Computational Linguistics/NLP</h4>
-                        <p class="card-text mt-3"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body">
-                        <i class='fas skillsIcon fa-shield-alt'></i>
-                        <h4 class="card-title mt-3">Lorem ipsum dolor</h4>
-                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body">
-                        <i class='fas skillsIcon fa-wrench'></i>
-                        <h4 class="card-title mt-3">Lorem ipsum dolor</h4>
-                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -285,6 +194,101 @@
                 </div>
             </div>
     </section>
+
+    <!-- skills section-->
+    <!-- https://getbootstrap.com/docs/5.2/components/card/#about -->
+    <section class="container section" id="skills">
+        <h1 class="text-center">Soft and Hard Skills</h1>
+        <div class="row">
+            <!-- soft skills -->
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
+                        <i class='far fa-comments skillsIcon'></i>
+                        <h4 class="card-title mt-3">Communication</h4>
+                        <p class="card-text mt-3">My background in linguistics has honed my ability to convey complex
+                            ideas with clarity and precision. Whether it's presenting research findings, collaborating
+                            with interdisciplinary teams, or translating technical concepts for broader audiences, I
+                            pride myself on my capacity to bridge communication gaps and foster understanding</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
+
+                        <i class="fa skillsIcon fa-book"></i>
+
+                        <h4 class="card-title mt-3">Self-Learning</h4>
+                        <p class="card-text mt-3">In the realm of formal linguistics, I've
+                            pursued a multidisciplinary
+                            path, integrating linguistics, mathematics, logic, and computer science. Self-driven
+                            learning is the cornerstone of my journey, allowing me to refine theories and provide
+                            precise analyses. This dedication equips me to adapt swiftly to evolving trends and deliver
+                            innovative solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="max-height: 250px;  overflow-y: auto;">
+                        <i class="fa skillsIcon fa-users"></i>
+                        <h4 class="card-title mt-3">Team and Individual Work</h4>
+                        <p class="card-text mt-3">Collaboration is at the core of my professional journey. From
+                            teaching
+                            linguistics to first-year students to evaluating social media content for machine
+                            learning,
+                            I've honed my ability to excel both as a team player and an individual contributor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- hard skills -->
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="max-height: 250px;  overflow-y: auto;">
+                        <i class='fa fa-file-text skillsIcon'></i>
+                        <h4 class="card-title mt-3">Computational Linguistics/NLP</h4>
+                        <p class="card-text mt-3"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class='fas skillsIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Lorem ipsum dolor</h4>
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body">
+                        <i class='fas skillsIcon fa-wrench'></i>
+                        <h4 class="card-title mt-3">Lorem ipsum dolor</h4>
+                        <p class="card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- contact section-->
     <!-- https://getbootstrap.com/docs/5.2/forms/overview -->
