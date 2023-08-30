@@ -17,8 +17,9 @@
 
 /* hero background image */
 .bgimage {
-  height: 6vh;
-  background: url("images/hero-image3.png");
+  height: 7vh;
+  /* background: url("images/hero-image3.png"); */
+  background-color: #264653;
   background-size: cover;
   position: relative;
   padding: 0;
