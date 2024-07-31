@@ -1,5 +1,2 @@
 # Ignore .DS_Store files created by macOS
 .DS_Store
-
-# Ignore CNAME files (used for custom domains on GitHub Pages)
-CNAME
