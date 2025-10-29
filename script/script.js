@@ -12,9 +12,7 @@
       return storedTheme;
     }
 
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+    return "dark";
   };
 
   const setTheme = (theme) => {
@@ -58,14 +56,15 @@
     }
   };
 
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", () => {
-      const storedTheme = getStoredTheme();
-      if (storedTheme !== "light" && storedTheme !== "dark") {
-        setTheme(getPreferredTheme());
-      }
-    });
+  // Removed browser preference auto-detection to keep dark mode as default
+  // window
+  //   .matchMedia("(prefers-color-scheme: dark)")
+  //   .addEventListener("change", () => {
+  //     const storedTheme = getStoredTheme();
+  //     if (storedTheme !== "light" && storedTheme !== "dark") {
+  //       setTheme(getPreferredTheme());
+  //     }
+  //   });
 
   window.addEventListener("DOMContentLoaded", () => {
     showActiveTheme(getPreferredTheme());
@@ -113,20 +112,20 @@ window.onscroll = function () {
 };
 
 const languages = [
-  "Hello, it's me Jon!",
-  "Olá, eu sou o Jon!",
-  "Bonjour, je suis Jon!",
+  "Hello, it's me",
+  "Olá, eu sou o",
+
 ];
 const languageTextElement = document.getElementById("languageText");
 
 let currentLanguageIndex = 0;
 let typingInterval;
 
-function typeNextCharacter() {
+function typeNextCharacter () {
   const currentText = languages[currentLanguageIndex];
   let currentCharIndex = 0;
 
-  function typeCharacter() {
+  function typeCharacter () {
     if (currentCharIndex < currentText.length) {
       languageTextElement.textContent += currentText.charAt(currentCharIndex);
       currentCharIndex++;
@@ -139,11 +138,11 @@ function typeNextCharacter() {
   typeCharacter();
 }
 
-function eraseText() {
+function eraseText () {
   const currentText = languageTextElement.textContent;
   let currentCharIndex = currentText.length;
 
-  function eraseCharacter() {
+  function eraseCharacter () {
     if (currentCharIndex > 0) {
       languageTextElement.textContent = currentText.substring(
         0,
@@ -159,7 +158,7 @@ function eraseText() {
   eraseCharacter();
 }
 
-function nextLanguage() {
+function nextLanguage () {
   setTimeout(() => {
     currentLanguageIndex = (currentLanguageIndex + 1) % languages.length;
     languageTextElement.textContent = ""; // Clear the text
@@ -189,4 +188,72 @@ avatar.addEventListener("mouseover", () => {
 avatar.addEventListener("mouseout", () => {
   // Change the avatar image source back to the original
   avatar.src = originalAvatarSrc;
+});
+
+// Smooth scroll for navigation links and close mobile menu when clicking a link
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+
+      // Close mobile menu after clicking a nav link
+      const navbarCollapse = document.getElementById('navbarSupportedContent');
+      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+      if (bsCollapse && window.innerWidth <= 991) {
+        bsCollapse.hide();
+      }
+    }
+  });
+});
+
+// Close mobile menu when clicking outside of it
+document.addEventListener('click', function (event) {
+  const navbarCollapse = document.getElementById('navbarSupportedContent');
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbar = document.querySelector('.navbar');
+
+  // Check if the click is outside the navbar and the menu is open
+  const isClickInsideNavbar = navbar.contains(event.target);
+  const isMenuOpen = navbarCollapse.classList.contains('show');
+
+  if (!isClickInsideNavbar && isMenuOpen && window.innerWidth <= 991) {
+    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+    if (bsCollapse) {
+      bsCollapse.hide();
+    }
+  }
+});
+
+// Add scroll reveal animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
+// Observe all cards for animation
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+  });
 });
