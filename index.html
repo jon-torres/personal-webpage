@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
-    <title>Jon Torres – Computational Linguist</title>
+    <title>Jon Torres – Software Engineer</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Jon Torres – Computational Linguist">
+    <meta property="og:title" content="Jon Torres – Software Engineer">
     <meta property="og:description"
-        content="Welcome to my personal website. I'm a Computational Linguist passionate about linguistics, data science, and web development.">
+        content="Welcome to my personal website. I'm a Software Engineer passionate about linguistics, problem solving, and building tools that help people work smarter.">
     <meta property="og:image" content="images/avatar1.png">
     <!-- Replace with the URL of your image -->
     <meta property="og:url" content="https://jon-torres.github.io/">
@@ -17,16 +17,16 @@
 
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
     <!-- linking css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="light-theme">
+<body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark">
+    <nav class="navbar navbar-expand-sm fixed-top navbarScroll navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Jonathan Torres</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -67,70 +67,85 @@
     </nav>
     <!-- main banner -->
     <section class="container-fluid section bgimage" id="home">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero_text">
-                <div class="hero_content">
-                    <!-- <h2 class="hero_title" h2id="languageText"></h2> -->
-
-                    <!-- <p class="hero_desc">Computational Linguist and Data Scientist</p> -->
+        <div class="hero_text">
+            <div class="hero_content">
+                <div class="hero-title-wrapper">
+                    <div class="typing-container" style="margin: 0;">
+                        <h2 class="hero_desc" id="languageText" style="margin: 0;"></h2>
+                    </div>
+                    <h1 class="hero_title" style="margin: 0;">Jon!</h1>
                 </div>
+                <p class="hero_desc" style="font-size: 1.1rem; margin-top: 1.5rem; opacity: 0.95;">
+                <p style="font-weight: 600;">Software Engineer 🛠️</p>
+                <p style="font-weight: 200;">Building intelligent systems that help people work smarter</p>
             </div>
         </div>
+        <a href="#about" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
     <!-- about section -->
     <section class="container mt-4 pt-4 section" id="about">
-        <h1 class="text-center">About Me</h1><br>
-        <div class="typing-container">
-            <h2 class="hero_title text-center" id="languageText"></h2>
-        </div>
+        <h1 class="text-center">About Me</h1>
 
         <div class="row mt-4">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
 
-                <div class="avatar-container" style="margin-right: 4rem;">
+                <div class="avatar-container">
                     <img src="images/avatar1.png" id="avatar" class="avatar rounded-circle img-fluid mb-3"
                         alt="Avatar" />
                 </div>
             </div>
 
             <div class="col-lg-8 d-flex flex-column justify-content-center">
-                <p>Welcome! Thank you for visiting my website.</p>
+                <p style="font-size: 1.15rem; color: var(--text-primary); font-weight: 500;">Hi, I'm Jon — a
+                    Software Engineer with a PhD in Linguistics and a passion for bridging the gap between problem
+                    solving and AI powered solutions.</p>
 
-                <p>My name is Jonathan, but you can call me Jon. I have a PhD in linguistics with a background in
-                    Natural
-                    Language Processing and Computational Linguistics. </p>
 
-                <p>Alongside my passion for linguistics, I am
-                    dedicated to expanding my expertise in Software Engineering.</p>
+                <p style="font-size: 1.15rem; font-weight: 300;">I specialize in
+                    <strong>Natural Language Processing</strong> and <strong>Software
+                        Engineering</strong>, with hands-on
+                    experience across the full lifecycle of LLM-powered<br> pipelines — from ideation to deployment— by
+                    applying industry-standard
+                    <strong>LLMOps</strong> practices such as prompt engineering, model evaluation, monitoring, and
+                    continuous improvement.
+                </p>
+                <p style="font-size: 1.15rem; font-weight: 300;">My work spans both B2B and
+                    B2C contexts, helping organizations leverage AI to automate tasks
+                    like
+                    unit test generation
+                    and business process optimization.<br> Whether it's
+                    designing chatbots, developing LLM-powered pipelines, or architecting scalable systems, I bring a
+                    unique
+                    perspective that combines my multidisciplinary background.</p>
 
-                <p>I have work experience in the development of pipelines that leverage the power of Large Language
-                    Models
-                    (LLMs) to automate different tasks such as test generation and business tasks in both B2B and B2C
-                    contexts.
+                <p style="font-size: 1.15rem; font-weight: 300;">Beyond code, you'll find me
+                    cooking up new recipes or being entertained by my playful black kitten —
+                    both activities that keep creativity flowing.</p>
+
+                <p><strong>📍 Based in São Paulo, Brazil</strong> · Open to new opportunities and relocation if needed
                 </p>
 
-                <p>When I'm not immersed in optimising code or tackling algorithms, you will often find me cooking. I'm
-                    also a proud tutor to a playful black kitten that brings me joy and a refreshing
-                    dose of creativity.</p>
-
-                <p>Currently based in Sao Paulo, Brazil, I am open to exciting opportunities that align with my
-                    skills
-                    and passion, even if it means relocating.</p>
-                <p><label for="linkedin"><a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"
-                            style="text-decoration: none; color:#2a9d8f; font-weight: bold"><i
-                                class="fa fa-linkedin"></i>
-                            LinkedIn</a>
-                    </label> | <label for="github"><a href="https://github.com/jon-torres" target="
-                            _blank" style="text-decoration: none; color:#2a9d8f; font-weight: bold"><i
-                                class="fa fa fa-github"></i>
-                            GitHub</a> | <label for="medium"><a href="https://www.medium.com/@linguisticsetc"
-                                target="_blank" style="text-decoration: none; color:#2a9d8f; font-weight: bold"><i
-                                    class="fa fa-medium"></i> Medium</a>
-                        </label></p>
-                <p><a href="https://docs.google.com/uc?id=1LODaLzz19dN3uANzQ8-S53MFN_RwjgJF&export=download"
-                        style="color:#2a9d8f">Download
-                        my Resume</a></p>
+                <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;">
+                    <a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank" style="font-weight: 600;">
+                        <i class="fa fa-linkedin"></i> LinkedIn
+                    </a>
+                    <span style="color: var(--text-secondary);">|</span>
+                    <a href="https://github.com/jon-torres" target="_blank" style="font-weight: 600;">
+                        <i class="fa fa-github"></i> GitHub
+                    </a>
+                    <span style="color: var(--text-secondary);">|</span>
+                    <a href="https://www.medium.com/@linguisticsetc" target="_blank" style="font-weight: 600;">
+                        <i class="fa fa-medium"></i> Medium
+                    </a>
+                    <span style="color: var(--text-secondary);">|</span>
+                    <a href="https://docs.google.com/uc?id=1LODaLzz19dN3uANzQ8-S53MFN_RwjgJF&export=download"
+                        style="font-weight: 600;">
+                        <i class="fa fa-file"></i> Resume
+                    </a>
+                </div>
 
             </div>
         </div>
@@ -143,35 +158,35 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/postgr.png" alt="Card image" style="width:100%"></t=>
-                        <div class="card-body" style="height: 250px; overflow-y: auto;">
-                            <h4 class="card-title">PostgreSQL Procedural Language Test Generation</h4>
-                            <p class="card-text">
-                            <p>A pipeline that made use of a Large Language Model (LLM)
-                                to
-                                generate automated unit tests integrating PostgreSQL Procedural Languages and xUnit.</p>
-                            <ul>
-                                <li>The average time cost to generate and execute a unit test was reduced by over 75%.
-                                </li>
-                                <li>The average financial cost to generate a passing test with the tool is $0.22.</li>
-                            </ul>
-
+                        <img class="card-img-top" src="images/postgr.png" alt="PostgreSQL Test Generation"
+                            style="width:100%">
+                        <div class="card-body" style="padding: 1.5rem;">
+                            <h4 class="card-title">LLM-Powered Test Generation</h4>
+                            <p class="card-text">Built an AI pipeline leveraging LLMs to auto-generate unit tests for
+                                PostgreSQL Procedural Languages integrated with xUnit.</p>
+                            <div
+                                style="margin-top: 1rem; padding: 1rem; background: rgba(59, 130, 246, 0.1); border-radius: 0.5rem;">
+                                <p style="margin: 0; font-size: 0.9rem;"><strong>⚡ 75% faster</strong> test generation
+                                </p>
+                                <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;"><strong>💰 $0.22</strong> per
+                                    passing test</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <a href="https://github.com/jon-torres/Discord-bot-text-generator" target="_blank"> <img
-                                class="card-img-top" src="images/bot_nlp.jpeg" alt="Card image" style="width:100%"></a>
-                        <div class="card-body" style="height: 250px; overflow-y: auto;">
-                            <h4 class="card-title">Discord bot Text Generator</h4>
-                            <p class="card-text">A Discord bot that can extract messages from users and generate new
-                                text from those messages or any corpus. It uses a Markov Chains algorithm and an n-gram
-                                model to generate the text.</p>
-                            <div class="text-center btn-link">
+                        <a href="https://github.com/jon-torres/Discord-bot-text-generator" target="_blank">
+                            <img class="card-img-top" src="images/bot_nlp.jpeg" alt="Discord Bot" style="width:100%">
+                        </a>
+                        <div class="card-body" style="padding: 1.5rem;">
+                            <h4 class="card-title">Discord Text Generator Bot</h4>
+                            <p class="card-text">NLP-powered Discord bot that extracts user messages and generates
+                                human-like text using Markov Chains and n-gram models.</p>
+                            <div style="margin-top: 1.5rem;">
                                 <a href="https://github.com/jon-torres/Discord-bot-text-generator" target="_blank"
-                                    class="btn btn-success">Visit the repository</a>
+                                    class="btn btn-success" style="width: 100%;">View Repository</a>
                             </div>
                         </div>
                     </div>
@@ -180,15 +195,15 @@
                 <div class="col-lg-4 mt-4">
                     <div class="card">
                         <a href="https://jon-torres.github.io/Libraree/" target="_blank">
-                            <img class="card-img-top" src="images/libraree.png" alt="Card image" style="width:100%"></a>
-                        <div class="card-body" style="height: 250px; overflow-y: auto;">
+                            <img class="card-img-top" src="images/libraree.png" alt="Libraree App" style="width:100%">
+                        </a>
+                        <div class="card-body" style="padding: 1.5rem;">
                             <h4 class="card-title">Libraree</h4>
-                            <p class="card-text">Libraree is a small library application. It keeps track of your reading
-                                backlog and saves it locally so you can
-                                revisit this page anytime you need.</p>
-                            <div class="text-center btn-link">
-                                <a href="https://jon-torres.github.io/Libraree/" target="_blank"
-                                    class="btn btn-success">Try it</a>
+                            <p class="card-text">A clean, minimalist library app for tracking your reading backlog. All
+                                data is stored locally in your browser for privacy and convenience.</p>
+                            <div style="margin-top: 1.5rem;">
+                                <a href="https://jon-torres.github.io/Libraree/" target="_blank" class="btn btn-success"
+                                    style="width: 100%;">Try Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -200,52 +215,41 @@
 
     <!-- skills section-->
     <section class="container section" id="skills">
-        <h1 class="text-center">Soft and Hard Skills</h1>
+        <h1 class="text-center">Skills & Expertise</h1>
         <div class="row">
             <!-- soft skills -->
             <div class="col-lg-4 mt-4">
                 <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
+                    <div class="card-body" style="padding: 2rem;">
                         <i class='far fa-comments skillsIcon'></i>
                         <h4 class="card-title mt-3">Communication</h4>
-                        <p class="card-text mt-3">My background in linguistics has sharpened my ability to convey
-                            complex
-                            ideas with clarity and precision. Whether it's presenting research findings, collaborating
-                            with interdisciplinary teams, or translating technical concepts for broader audiences, I
-                            pride myself on my capacity to bridge communication gaps and foster understanding between
-                            teams with different backgrounds</p>
+                        <p class="card-text mt-3">Linguistics background enables me to distill complex technical
+                            concepts into clear, accessible language. I excel at bridging gaps between technical and
+                            non-technical stakeholders, promoting collaboration across diverse teams.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 mt-4">
                 <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
-
+                    <div class="card-body" style="padding: 2rem;">
                         <i class="fa skillsIcon fa-book"></i>
-
-                        <h4 class="card-title mt-3">Self-Learning</h4>
-                        <p class="card-text mt-3">In the realm of formal linguistics, I've
-                            pursued a multidisciplinary
-                            path, integrating linguistics, mathematics, logic, and computer science. Self-driven
-                            learning is the cornerstone of my journey, allowing me to refine theories and provide
-                            precise analyses. This dedication equips me to adapt swiftly to evolving trends and deliver
-                            innovative solutions</p>
+                        <h4 class="card-title mt-3">Continuous Learning</h4>
+                        <p class="card-text mt-3">Self-taught across linguistics, logic, and software engineering. I
+                            thrive on mastering new technologies and methodologies, staying ahead of industry trends to
+                            deliver innovative solutions.</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 mt-4">
                 <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px;  overflow-y: auto;">
+                    <div class="card-body" style="padding: 2rem;">
                         <i class="fa skillsIcon fa-users"></i>
-                        <h4 class="card-title mt-3">Team and Individual Work</h4>
-                        <p class="card-text mt-3">Collaboration is at the core of my professional journey. Working with
-                            people from different backgrounds
-                            helped me to understand better my co-workers' needs and the moments that they would need my
-                            aid and moments that I had to focus
-                            to deliver the expected results.
-                        </p>
+                        <h4 class="card-title mt-3">Collaboration</h4>
+                        <p class="card-text mt-3">Experienced in both independent deep work and cross-functional
+                            collaboration. I adapt my working style to team needs, knowing when to support colleagues
+                            and when to drive focused execution.</p>
                     </div>
                 </div>
             </div>
@@ -254,53 +258,52 @@
             <!-- hard skills -->
             <div class="col-lg-4 mt-4">
                 <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
-                        <i class="fa fa-hammer skillsIcon"></i>
-                        <h4 class="card-title mt-3">Software Engineering</h4>
-                        <div class="text-center mt-3" style="display: flex; flex-wrap: wrap; justify-content: center;">
-                            <!-- Use flexbox for even spacing -->
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Python</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">.NET</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">SQL</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">LLM</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Git</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Docker</button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
-                        <i class='fa fa-file-text skillsIcon'></i>
-                        <h4 class="card-title mt-3">Computational Linguistics/NLP</h4>
-                        <div class="text-center mt-3" style="display: flex; flex-wrap: wrap; justify-content: center;">
-                            <!-- Use flexbox for even spacing -->
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Python</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">spaCy</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">NLTK</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Prolog</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Chatbots</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 mt-4">
-                <div class="card skillsText">
-                    <div class="card-body" style="max-height: 250px; overflow-y: auto;">
+                    <div class="card-body" style="padding: 2rem;">
                         <i class="fa fa-code skillsIcon"></i>
+                        <h4 class="card-title mt-3">Software Engineering</h4>
+                        <div class="text-center mt-3"
+                            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <button type="button" class="btn btn-secondary btn-rounded">Python</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">.NET</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">SQL</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Git</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Docker</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">FastAPI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="padding: 2rem;">
+                        <i class='fa fa-brain skillsIcon'></i>
+                        <h4 class="card-title mt-3">AI & NLP</h4>
+                        <div class="text-center mt-3"
+                            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <button type="button" class="btn btn-secondary btn-rounded">LLMOps</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">spaCy</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">NLTK</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Chatbots</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Langsmith</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">RAG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillsText">
+                    <div class="card-body" style="padding: 2rem;">
+                        <i class="fa fa-laptop-code skillsIcon"></i>
                         <h4 class="card-title mt-3">Web Development</h4>
-                        <div class="text-center mt-3" style="display: flex; flex-wrap: wrap; justify-content: center;">
-                            <!-- Use flexbox for even spacing -->
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">HTML</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">CSS</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Javascript</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Bootstrap</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">Tailwind CSS</button>
-                            <button type="button" class="btn btn-secondary btn-rounded mx-2 my-2">FastAPI</button>
+                        <div class="text-center mt-3"
+                            style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+                            <button type="button" class="btn btn-secondary btn-rounded">HTML/CSS</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">JavaScript</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">React</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Bootstrap</button>
+                            <button type="button" class="btn btn-secondary btn-rounded">Tailwind</button>
                         </div>
                     </div>
                 </div>
@@ -334,47 +337,50 @@
 
     <!-- contact section-->
     <section class="container mt-3 section" id="contact">
-        <h1 class="text-center">Contact Me</h1>
+        <h1 class="text-center">Let's Connect</h1>
 
         <div class="row mt-4">
             <div class="col-lg-12">
-                <!-- Center the content horizontally -->
                 <div class="d-flex justify-content-center text-center">
                     <div class="col-lg-6">
-                        <p>Feel free to contact me:</p>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Interested in collaborating or have a project
+                            in mind? I'd love to hear from you.</p>
 
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label for="email" class="form-label"><span style="color:#2a9d8f"><i
-                                        class="fa fa-envelope"></i> Email:</span>
-                                <br><br>
-                                <p>
-                            </label>jonathan(dot)torres(at)alumni(dot)usp(dot)br
-                            </p>
+                        <div
+                            style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1)); padding: 2rem; border-radius: 1rem; margin-bottom: 2rem;">
+                            <div class="mb-4">
+                                <i class="fa fa-envelope"
+                                    style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                                <p
+                                    style="font-size: 1.1rem; color: var(--text-primary); margin: 1rem 0 0.5rem 0; font-weight: 600;">
+                                    Email</p>
+                                <p style="color: var(--text-secondary);">jonathan(dot)torres(at)alumni(dot)usp(dot)br
+                                </p>
+                            </div>
+
+                            <div
+                                style="display: flex; gap: 1.5rem; justify-content: center; align-items: center; margin-top: 2rem;">
+                                <a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"
+                                    style="font-weight: 600; font-size: 1.1rem;">
+                                    <i class="fa fa-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/jon-torres" target="_blank"
+                                    style="font-weight: 600; font-size: 1.1rem;">
+                                    <i class="fa fa-github"></i> GitHub
+                                </a>
+                                <a href="https://www.medium.com/@linguisticsetc" target="_blank"
+                                    style="font-weight: 600; font-size: 1.1rem;">
+                                    <i class="fa fa-medium"></i> Medium
+                                </a>
+                            </div>
                         </div>
-                        <!-- LinkedIn -->
-                        <!-- <div class="mb-3">
-                            <label for="linkedin" class="form-label"><a
-                                    href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"
-                                    style="text-decoration: none;"><i class="fa fa-linkedin"></i> LinkedIn</a>
-                            </label>
 
-                        </div> -->
-
-                        <!-- GitHub -->
-                        <!-- <div class="mb-3">
-                            <label for="linkedin" class="form-label"><a href="https://github.com/jon-torres" target="
-                                    _blank" style="text-decoration: none;"><i class="fa fa fa-github"></i> GitHub</a>
-                            </label>
-                        </div> -->
                         <div>
-                            <p><a href="https://docs.google.com/uc?id=1LODaLzz19dN3uANzQ8-S53MFN_RwjgJF&export=download"
-                                    style="text-decoration: none; color:#2a9d8f"><i class="fa fa-file"></i> Resume</a>
-                            </p>
+                            <a href="https://docs.google.com/uc?id=1LODaLzz19dN3uANzQ8-S53MFN_RwjgJF&export=download"
+                                class="btn" style="padding: 1rem 2rem; font-size: 1.1rem;">
+                                <i class="fa fa-download"></i> Download Resume
+                            </a>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
@@ -385,8 +391,8 @@
     <footer class="container-fluid footer" id="footer">
         <!-- social media icons and text container -->
         <div class="d-flex align-items-center justify-content-center">
-            <span>© Jonathan Torres 2025/</span>
-            <div class="social-icons ml-3"> <!-- Added ml-3 class here -->
+            <span>Built with 💙 by Jonathan Torres © 2025 /</span>
+            <div class="social-icons ml-3">
                 <a href="https://github.com/jon-torres" target="_blank"><i
                         class="fab fa-github dark-icon round-icon"></i></a>
                 <a href="https://www.linkedin.com/in/jonathantorresling/" target="_blank"><i
